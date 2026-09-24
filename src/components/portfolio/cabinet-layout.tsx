@@ -2,9 +2,9 @@ import type React from "react";
 import DividerFile from "@/components/portfolio/cabinet-files/divider-file";
 import InternshipFile from "@/components/portfolio/cabinet-files/internship-file";
 import PlaceholderFile from "@/components/portfolio/cabinet-files/placeholder-file";
-import UniversityFile from "./cabinet-files/university-file";
-import ResearchFile from "./cabinet-files/research-file";
-import SkillsFile from "./cabinet-files/skills-file";
+import UniversityFile from "@/components/portfolio/cabinet-files/university-file";
+import CompetitionsFile from "@/components/portfolio/cabinet-files/competitions-file";
+import SystemsFile from "@/components/portfolio/cabinet-files/systems-file";
 
 export type File = {
     tabLocation: 0 | 1 | 2;
@@ -13,6 +13,7 @@ export type File = {
     content: React.ReactNode;
 };
 
+// placeholder text
 export const loremIpsum =
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin nulla erat, sed iaculis nisi ornare vel. Curabitur efficitur, felis a ullamcorper dignissim, erat nulla dapibus mi, sed rutrum nisi felis sed lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin nulla erat, sed iaculis nisi ornare vel.";
 
@@ -46,18 +47,18 @@ const cabinetLayout: File[] = [
     },
     {
         tabLocation: 2,
-        title: "Internship",
+        title: "Cartogram",
         content: <InternshipFile />,
     },
     {
         tabLocation: 0,
-        title: "Research",
-        content: <ResearchFile />,
+        title: "Competitions",
+        content: <CompetitionsFile />,
     },
     {
         tabLocation: 1,
-        title: "Skills",
-        content: <SkillsFile />,
+        title: "---",
+        content: <PlaceholderFile />,
     },
     {
         tabLocation: 0,
@@ -72,8 +73,8 @@ const cabinetLayout: File[] = [
     },
     {
         tabLocation: 1,
-        title: "---",
-        content: <PlaceholderFile />,
+        title: "Systems",
+        content: <SystemsFile />,
     },
     {
         tabLocation: 2,

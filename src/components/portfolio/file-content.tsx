@@ -42,7 +42,7 @@ const FileInfo = ({ className, ...props }: React.ComponentProps<"div">) => {
 };
 
 const FileHeader = ({ className, ...props }: React.ComponentProps<"div">) => {
-    return <div className={cn("flex items-center gap-3", className)} {...props} />;
+    return <div className={cn("flex items-center gap-2.5", className)} {...props} />;
 };
 
 const FileTitle = ({ className, ...props }: React.ComponentProps<"div">) => {
@@ -69,7 +69,7 @@ const FileText = ({ className, ...props }: React.ComponentProps<"div">) => {
 
 const FileImage = ({ className, ...props }: React.ComponentProps<"div">) => {
     return (
-        <div className="h-2/3 flex-1 -rotate-[2deg] border bg-zinc-100 p-4">
+        <div className="-mt-1 h-2/3 flex-1 -rotate-[2deg] border bg-zinc-100 p-4">
             <div
                 className={cn("flex h-full w-full items-center justify-center border", className)}
                 {...props}

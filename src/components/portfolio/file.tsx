@@ -14,7 +14,7 @@ const baseDragOptions = {
 const getDragOptions = (isChromium: boolean, isMobile: boolean) => ({
     ...baseDragOptions,
 
-    // on non chromium browsers, the drag effect is bugged, disabling momentum and elasticity fixes this
+    // on non chromium & mobile browsers, the drag effect is bugged, disabling momentum and elasticity fixes this
     dragMomentum: isChromium && !isMobile,
     dragElastic: isChromium && !isMobile ? 0.05 : 0,
 
